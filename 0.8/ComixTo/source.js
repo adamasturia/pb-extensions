@@ -842,7 +842,7 @@ var _Sources = (() => {
     name: "ComixTo",
     icon: "icon.png",
     author: "AthK/Adamasturia",
-    authorWebsite: "https://pb.athk.eu.org",
+    authorWebsite: "https://pb.adamasturia.eu.org",
     description: "Comix.to Extension with advanced filters, comixto CF fix",
     contentRating: import_types.ContentRating.EVERYONE,
     websiteBaseURL: DOMAIN,
