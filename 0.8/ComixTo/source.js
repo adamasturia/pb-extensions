@@ -841,9 +841,9 @@ var _Sources = (() => {
     version: "1.0.0",
     name: "ComixTo",
     icon: "icon.png",
-    author: "AthK",
+    author: "AthK/Adamasturia",
     authorWebsite: "https://pb.athk.eu.org",
-    description: "Comix.to Extension with advanced filters",
+    description: "Comix.to Extension with advanced filters, comixto CF fix",
     contentRating: import_types.ContentRating.EVERYONE,
     websiteBaseURL: DOMAIN,
     sourceTags: [
@@ -1163,19 +1163,20 @@ var _Sources = (() => {
         metadata: nextPage
       });
     }
-    getCloudflareBypassRequest() {
+    async getCloudflareBypassRequestAsync() {
       return App.createRequest({
-        url: DOMAIN,
+        url: "https://comix.to/credits",   // or any page that reliably triggers the challenge
         method: "GET",
         headers: {
-          Referer: `${DOMAIN}/`,
-          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36"
+          "Referer": "https://comix.to/",
+          "User-Agent": await this.requestManager.getDefaultUserAgent()  // use dynamic UA
         }
       });
     }
     checkResponseError(response) {
       if (response.status === 403 || response.status === 503) {
-        throw new Error("Cloudflare Bypass Required");
+        throw new Error(`CLOUDFLARE BYPASS ERROR:
+    Please go to ${DOMAIN} and press the cloud icon.`);
       }
     }
   };
