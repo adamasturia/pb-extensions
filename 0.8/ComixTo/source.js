@@ -838,7 +838,7 @@ var _Sources = (() => {
 
   // src/ComixTo/ComixTo.ts
   var ComixToInfo = {
-    version: "1.0.0",
+    version: "1.0.1",
     name: "ComixTo",
     icon: "icon.png",
     author: "AthK/Adamasturia",
@@ -860,22 +860,20 @@ var _Sources = (() => {
       this.parser = new Parser();
       this.stateManager = App.createSourceStateManager();
       this.requestManager = App.createRequestManager({
-        requestsPerSecond: 4,
-        requestTimeout: 15e3,
-        interceptor: {
-          interceptRequest: async (request) => {
-            request.headers = {
-              ...request.headers ?? {},
-              Referer: `${DOMAIN}/`,
-              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36"
-            };
-            return request;
-          },
-          interceptResponse: async (response) => {
-            return response;
-          }
-        }
-      });
+      requestsPerSecond: 4,
+      requestTimeout: 15000,
+      interceptor: {
+        interceptRequest: async (request) => {
+          request.headers = {
+            ...request.headers,
+            "Referer": "https://comix.to/",
+            "User-Agent": await this.requestManager.getDefaultUserAgent() // dynamic
+          };
+          return request;
+        },
+        interceptResponse: async (response) => response
+      }
+    });
     }
     // -- Capabilities --
     async supportsTagExclusion() {
