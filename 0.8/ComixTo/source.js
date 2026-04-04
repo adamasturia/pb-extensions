@@ -379,20 +379,22 @@ var _Sources = (() => {
   var require_exports = __commonJS({
     "node_modules/@paperback/types/lib/generated/_exports.js"(exports) {
       "use strict";
-      var __createBinding = exports && exports.__createBinding || (Object.create ? function(o, m, k, k2) {
+      var __createBinding = exports && exports.__createBinding || (Object.create ? function (o, m, k, k2) {
         if (k2 === void 0) k2 = k;
         var desc = Object.getOwnPropertyDescriptor(m, k);
         if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
-          desc = { enumerable: true, get: function() {
-            return m[k];
-          } };
+          desc = {
+            enumerable: true, get: function () {
+              return m[k];
+            }
+          };
         }
         Object.defineProperty(o, k2, desc);
-      } : function(o, m, k, k2) {
+      } : function (o, m, k, k2) {
         if (k2 === void 0) k2 = k;
         o[k2] = m[k];
       });
-      var __exportStar = exports && exports.__exportStar || function(m, exports2) {
+      var __exportStar = exports && exports.__exportStar || function (m, exports2) {
         for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports2, p)) __createBinding(exports2, m, p);
       };
       Object.defineProperty(exports, "__esModule", { value: true });
@@ -510,7 +512,7 @@ var _Sources = (() => {
       Object.defineProperty(exports, "__esModule", { value: true });
       exports.BadgeColor = void 0;
       var BadgeColor2;
-      (function(BadgeColor3) {
+      (function (BadgeColor3) {
         BadgeColor3["BLUE"] = "default";
         BadgeColor3["GREEN"] = "success";
         BadgeColor3["GREY"] = "info";
@@ -580,20 +582,22 @@ var _Sources = (() => {
   var require_interfaces = __commonJS({
     "node_modules/@paperback/types/lib/base/interfaces/index.js"(exports) {
       "use strict";
-      var __createBinding = exports && exports.__createBinding || (Object.create ? function(o, m, k, k2) {
+      var __createBinding = exports && exports.__createBinding || (Object.create ? function (o, m, k, k2) {
         if (k2 === void 0) k2 = k;
         var desc = Object.getOwnPropertyDescriptor(m, k);
         if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
-          desc = { enumerable: true, get: function() {
-            return m[k];
-          } };
+          desc = {
+            enumerable: true, get: function () {
+              return m[k];
+            }
+          };
         }
         Object.defineProperty(o, k2, desc);
-      } : function(o, m, k, k2) {
+      } : function (o, m, k, k2) {
         if (k2 === void 0) k2 = k;
         o[k2] = m[k];
       });
-      var __exportStar = exports && exports.__exportStar || function(m, exports2) {
+      var __exportStar = exports && exports.__exportStar || function (m, exports2) {
         for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports2, p)) __createBinding(exports2, m, p);
       };
       Object.defineProperty(exports, "__esModule", { value: true });
@@ -614,7 +618,7 @@ var _Sources = (() => {
       Object.defineProperty(exports, "__esModule", { value: true });
       exports.ContentRating = exports.SourceIntents = void 0;
       var SourceIntents2;
-      (function(SourceIntents3) {
+      (function (SourceIntents3) {
         SourceIntents3[SourceIntents3["MANGA_CHAPTERS"] = 1] = "MANGA_CHAPTERS";
         SourceIntents3[SourceIntents3["MANGA_TRACKING"] = 2] = "MANGA_TRACKING";
         SourceIntents3[SourceIntents3["HOMEPAGE_SECTIONS"] = 4] = "HOMEPAGE_SECTIONS";
@@ -623,7 +627,7 @@ var _Sources = (() => {
         SourceIntents3[SourceIntents3["SETTINGS_UI"] = 32] = "SETTINGS_UI";
       })(SourceIntents2 = exports.SourceIntents || (exports.SourceIntents = {}));
       var ContentRating2;
-      (function(ContentRating3) {
+      (function (ContentRating3) {
         ContentRating3["EVERYONE"] = "EVERYONE";
         ContentRating3["MATURE"] = "MATURE";
         ContentRating3["ADULT"] = "ADULT";
@@ -638,7 +642,7 @@ var _Sources = (() => {
       Object.defineProperty(exports, "__esModule", { value: true });
       exports.HomeSectionType = void 0;
       var HomeSectionType2;
-      (function(HomeSectionType3) {
+      (function (HomeSectionType3) {
         HomeSectionType3["singleRowNormal"] = "singleRowNormal";
         HomeSectionType3["singleRowLarge"] = "singleRowLarge";
         HomeSectionType3["doubleRow"] = "doubleRow";
@@ -659,20 +663,22 @@ var _Sources = (() => {
   var require_base = __commonJS({
     "node_modules/@paperback/types/lib/base/index.js"(exports) {
       "use strict";
-      var __createBinding = exports && exports.__createBinding || (Object.create ? function(o, m, k, k2) {
+      var __createBinding = exports && exports.__createBinding || (Object.create ? function (o, m, k, k2) {
         if (k2 === void 0) k2 = k;
         var desc = Object.getOwnPropertyDescriptor(m, k);
         if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
-          desc = { enumerable: true, get: function() {
-            return m[k];
-          } };
+          desc = {
+            enumerable: true, get: function () {
+              return m[k];
+            }
+          };
         }
         Object.defineProperty(o, k2, desc);
-      } : function(o, m, k, k2) {
+      } : function (o, m, k, k2) {
         if (k2 === void 0) k2 = k;
         o[k2] = m[k];
       });
-      var __exportStar = exports && exports.__exportStar || function(m, exports2) {
+      var __exportStar = exports && exports.__exportStar || function (m, exports2) {
         for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports2, p)) __createBinding(exports2, m, p);
       };
       Object.defineProperty(exports, "__esModule", { value: true });
@@ -698,20 +704,22 @@ var _Sources = (() => {
   var require_lib = __commonJS({
     "node_modules/@paperback/types/lib/index.js"(exports) {
       "use strict";
-      var __createBinding = exports && exports.__createBinding || (Object.create ? function(o, m, k, k2) {
+      var __createBinding = exports && exports.__createBinding || (Object.create ? function (o, m, k, k2) {
         if (k2 === void 0) k2 = k;
         var desc = Object.getOwnPropertyDescriptor(m, k);
         if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
-          desc = { enumerable: true, get: function() {
-            return m[k];
-          } };
+          desc = {
+            enumerable: true, get: function () {
+              return m[k];
+            }
+          };
         }
         Object.defineProperty(o, k2, desc);
-      } : function(o, m, k, k2) {
+      } : function (o, m, k, k2) {
         if (k2 === void 0) k2 = k;
         o[k2] = m[k];
       });
-      var __exportStar = exports && exports.__exportStar || function(m, exports2) {
+      var __exportStar = exports && exports.__exportStar || function (m, exports2) {
         for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports2, p)) __createBinding(exports2, m, p);
       };
       Object.defineProperty(exports, "__esModule", { value: true });
@@ -859,21 +867,51 @@ var _Sources = (() => {
       super(...arguments);
       this.parser = new Parser();
       this.stateManager = App.createSourceStateManager();
+      // this.requestManager = App.createRequestManager({
+      // requestsPerSecond: 4,
+      // requestTimeout: 15000,
+      // interceptor: {
+      //   interceptRequest: async (request) => {
+      //     request.headers = {
+      //       ...request.headers,
+      //       "Referer": "https://comix.to/",
+      //       "User-Agent": await this.requestManager.getDefaultUserAgent() // dynamic
+      //     };
+      //     return request;
+      //   },
+      //   interceptResponse: async (response) => response
+      // }
+      // });
       this.requestManager = App.createRequestManager({
-      requestsPerSecond: 4,
-      requestTimeout: 15000,
-      interceptor: {
-        interceptRequest: async (request) => {
-          request.headers = {
-            ...request.headers,
-            "Referer": "https://comix.to/",
-            "User-Agent": await this.requestManager.getDefaultUserAgent() // dynamic
-          };
-          return request;
-        },
-        interceptResponse: async (response) => response
-      }
-    });
+        requestsPerSecond: 4,
+        requestTimeout: 15000,
+        interceptor: {
+          interceptRequest: async (request) => {
+            // 1. Add standard headers
+            request.headers = {
+              ...request.headers,
+              "Referer": "https://comix.to/",
+              "User-Agent": await this.requestManager.getDefaultUserAgent()
+            };
+
+            // 2. If this is an API request, add the cf_clearance token as query parameter
+            if (request.url.includes("/api/v2/")) {
+              let cfCookie = request.cookies?.find(c => c.name === "cf_clearance");
+              if (!cfCookie) {
+                // Fallback: try to get from a dummy request? but cookies should be there
+                console.warn("cf_clearance cookie not found, API request may fail");
+              } else {
+                const token = cfCookie.value;
+                // Append _=token&time=1 to the URL
+                const separator = request.url.includes("?") ? "&" : "?";
+                request.url = `${request.url}${separator}_=${encodeURIComponent(token)}&time=1`;
+              }
+            }
+            return request;
+          },
+          interceptResponse: async (response) => response
+        }
+      });
     }
     // -- Capabilities --
     async supportsTagExclusion() {
@@ -1180,4 +1218,4 @@ var _Sources = (() => {
   };
   return __toCommonJS(ComixTo_exports);
 })();
-this.Sources = _Sources; if (typeof exports === 'object' && typeof module !== 'undefined') {module.exports.Sources = this.Sources;}
+this.Sources = _Sources; if (typeof exports === 'object' && typeof module !== 'undefined') { module.exports.Sources = this.Sources; }
